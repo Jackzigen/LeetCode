@@ -47,3 +47,11 @@
 [交换节点-24. Swap Nodes in Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/submissions/)
 
 [判断链表是否有环-141. Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/submissions/)
+
+### 堆栈(stack) 和 队列(Queue)
+
+
+[数据流中第K大元素-703. Kth Largest Element in a Stream](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/submissions/)
+
+### Map 和 Set 
+
