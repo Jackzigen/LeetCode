@@ -25,6 +25,8 @@
 
 - Test Code（测试案例）
 
+## 数据结构
+
 ### 数组
 数组内存地址是连续的
 数组查找  时间复杂度O(1)
@@ -55,3 +57,74 @@
 
 ### Map 和 Set 
 
+
+
+## 算法
+
+### 深度优先搜索(DFS)和广度优先搜索(BFS)
+
+DFS 代码模板
+
+递归写法
+```
+visited = set() 
+
+def dfs(node, visited):
+if node in visited: # terminator
+	# already visited 
+	return 
+
+	visited.add(node) 
+
+	# process current node here. 
+	...
+	for next_node in node.children(): 
+		if not next_node in visited: 
+			dfs(next_node, visited)
+
+```
+
+非递归写法
+
+```
+def DFS(self, tree): 
+
+	if tree.root is None: 
+		return [] 
+
+	visited, stack = [], [tree.root]
+
+	while stack: 
+		node = stack.pop() 
+		visited.add(node)
+
+		process (node) 
+		nodes = generate_related_nodes(node) 
+		stack.push(nodes) 
+
+	# other processing work 
+	...
+
+```
+
+BFS 代码
+
+```
+def BFS(graph, start, end):
+
+	queue = [] 
+	queue.append([start]) 
+	visited.add(start)
+
+	while queue: 
+		node = queue.pop() 
+		visited.add(node)
+
+		process(node) 
+		nodes = generate_related_nodes(node) 
+		queue.push(nodes)
+
+	# other processing work 
+	...
+
+```
