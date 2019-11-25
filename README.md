@@ -136,6 +136,61 @@ def BFS(graph, start, end):
 ### 双向BFS
 一个从头开始，一个从后面开始
 
+```
+//双向BFS 模板 
+//思想：从头和尾都往中间走
+var ladderLength = function(beginWord, endWord, wordList) {
+    //判断边界条件
+    let wordListSet = new Set(wordList);
+    if(!wordListSet.has(endWord)){
+        return 0;
+    }
+    //相比单向BFS中使用的Queue 使用set具有判重的特点
+    //创建头set
+    let beginSet = new Set();
+    beginSet.add(beginWord);
+    //创建尾set
+    let endSet = new Set();
+    endSet.add(endWord);
+    //设置级别
+    let level = 1;
+    //只要头部的set大于0
+    while (beginSet.size > 0) {
+        //临时变量
+        let next_beginSet = new Set();
+        //遍历
+        for(let key of beginSet){
+            for(let i = 0;i < key.length;i++){
+                for(let j = 0;j < 26;j++){
+                   let s =  String.fromCharCode(97+j);
+		   //不相等时 处理
+                   if(s != key[i]){
+                        let new_word = key.slice(0,i)+s+key.slice(i+1);
+                        if(endSet.has(new_word)){
+                            return level + 1;
+                        }
+                        if(wordListSet.has(new_word)){
+                            next_beginSet.add(new_word);
+                            wordListSet.delete(new_word);
+                        }
+                   }
+                }
+            }
+        }
+        beginSet = next_beginSet;
+        level++;
+	
+        //头部分大于尾时，交换头尾部分
+	//这样都只要计算beginSet就好了
+        if(beginSet.size > endSet.size){
+            [beginSet,endSet] = [endSet,beginSet]
+        }
+    }
+    return 0;
+
+};
+```
+
 ### 启发式搜索
 将BFS的queue替换成优先队列Priority Queue，带有智能
 
