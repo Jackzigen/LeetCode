@@ -221,5 +221,41 @@ balance factor = {-1,0,1}
 读写都多，那就用红黑树
 
 
+### 排序
+手写快排
+```
+function quickSort(array, left, right) {
+    //边界条件
+     if(right <= left) return;
+    //
+     var partitionIndex = partition(array, left, right);
+     //对标杆两侧进行快排
+     quickSort(array, left, partitionIndex - 1);
+     quickSort(array, partitionIndex + 1, right);
+}
+
+//分隔值
+function partition(array, left, right) {
+    //partitionIndex 小于pivot的元素个数  pivot 标杆位置
+    var partitionIndex = left, pivot = right;
+    for(let i = left; i < right; i++) {
+        //小于标杆的，都放到左边
+        if(array[i] < array[pivot]) {
+            swap(array, i, partitionIndex);
+            partitionIndex ++;
+        }
+    }
+    //一开始标杆的位置在最右边，现在调它到合适的位置
+    swap(array, pivot, partitionIndex);
+    return partitionIndex;
+}
+
+//交换两个元素
+function swap(array, i, j) {
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+}
+```
 
 
