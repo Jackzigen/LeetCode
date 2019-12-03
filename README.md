@@ -130,7 +130,7 @@ def BFS(graph, start, end):
 ```
 
 ### 动态规划
-[72.编辑距离](../Problems/1-100/72.编辑距离.md)
+[72.编辑距离](https://github.com/Jackzigen/LeetCode/blob/master/Problems/1-100/72.编辑距离.md)
 
 ### 剪枝
 就是减掉淘汰、次优分支，是一种思想
