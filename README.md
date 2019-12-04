@@ -131,7 +131,7 @@ def BFS(graph, start, end):
 
 ### 动态规划
 [72.编辑距离](https://github.com/Jackzigen/LeetCode/blob/master/Problems/1-100/72.编辑距离.md)
-
+[120.三角形最小路径之和](https://github.com/Jackzigen/LeetCode/commit/53811bd52756196e8dff5c7a694d4e5a73501ff8)
 ### 剪枝
 就是减掉淘汰、次优分支，是一种思想
 使用场景：状态树比较复杂的，比如：国际象棋、斐波拉契数列、各种棋等
