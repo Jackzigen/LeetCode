@@ -129,6 +129,9 @@ def BFS(graph, start, end):
 
 ```
 
+### 动态规划
+[72.编辑距离](https://github.com/Jackzigen/LeetCode/blob/master/Problems/1-100/72.编辑距离.md)
+
 ### 剪枝
 就是减掉淘汰、次优分支，是一种思想
 使用场景：状态树比较复杂的，比如：国际象棋、斐波拉契数列、各种棋等
