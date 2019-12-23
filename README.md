@@ -49,28 +49,7 @@
 
 ## 数据结构
 
-### 数组
-数组内存地址是连续的
-数组查找  时间复杂度O(1)
-
-插入、删除  平均时间复杂度 O(n) 最好情况O(1) 最坏情况O(n)
-
-### 链表(Linked List)
-单链表、双链表
-
-链表查找  需要从头结点开始往后找 时间复杂度为O(n)
-
-插入、删除  只需要把前一个节点next指针指向它、它的next指针指向后面节点，时间复杂度为O(1)
-
-
-应用场景：一、插入删除操作比较多  二、不知道有多少个元素，每新增一个就添加在后面
-
-[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
-
-
-[交换节点-24. Swap Nodes in Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/submissions/)
-
-[判断链表是否有环-141. Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/submissions/)
+### [数组、链表、跳表](https://github.com/Jackzigen/LeetCode/blob/master/数组、链表、跳表.md)
 
 ### 堆栈(stack) 和 队列(Queue)
 
