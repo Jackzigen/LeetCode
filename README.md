@@ -51,7 +51,7 @@
 
 ### [数组、链表、跳表](https://github.com/Jackzigen/LeetCode/blob/master/数组、链表、跳表.md)
 
-### [堆栈(stack) 、队列(Queue)、Map 、Set]()
+### [堆栈(stack) 、队列(Queue)、Map 、Set](https://github.com/Jackzigen/LeetCode/blob/master/栈、队列、哈希表.md)
 
 
 
