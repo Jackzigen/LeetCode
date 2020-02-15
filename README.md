@@ -59,7 +59,7 @@
 
 #### [二叉树、递归](https://github.com/Jackzigen/LeetCode/blob/master/二叉树、递归.md)
 
-
+### [分治、回溯、DFS、BFS](https://github.com/Jackzigen/LeetCode/blob/master/分治、回溯、DFS、BFS.md)
 
 ### 深度优先搜索(DFS)和广度优先搜索(BFS)
 
