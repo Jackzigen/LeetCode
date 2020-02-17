@@ -61,6 +61,8 @@
 
 #### [分治、回溯、DFS、BFS](https://github.com/Jackzigen/LeetCode/blob/master/分治、回溯、DFS、BFS.md)
 
+#### [贪心算法、二分查找](https://github.com/Jackzigen/LeetCode/blob/master/贪心算法、二分查找.md)
+
 ### 深度优先搜索(DFS)和广度优先搜索(BFS)
 
 DFS 代码模板
